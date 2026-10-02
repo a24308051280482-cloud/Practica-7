@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios en HTML</title>
+<!-- Libreria de iconos en linea -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+<!-- El bloque "form" sirve para crear el fomulario y tiene bloque de cierre -->
+<form action="" method="post"> <!-- El "action" sirve como una variable para identificarla en una base de datos y el "method" es la forma en la que se subirá el fomulario -->
+Ingresa tu nombre:
+<input type="text" name="nombre"> <!-- El "input" es donde se guardará la informacion del dato ingresado, el "type" es el tipo de accion que hará el boton y el "name" es el nombre del dato -->
+<br>
+Ingresa tu correo:
+<input type="email" name="correo"> <!-- Aqui se nos muestra que este input no ingresará los datos como texto, sino que se ingresará como formato de correo electronico -->
+<br>
+Ingresa tus comentarios:
+<textarea name="comentarios" rows="1" cols="10"></textarea> <!-- El "textarea" es donde se puede ingresar caracteres sin ninguna limitacion, las "rows" son las filas y las "cols" son las columnas limite -->
+<br>
+<input type="submit" value="enviar">
+<input type="reset" value="borrar">
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios en HTML</title>
+<!-- Libreria de iconos en linea -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+<!-- El bloque "form" sirve para crear el fomulario y tiene bloque de cierre -->
+<form action="" method="post"> <!-- El "action" sirve como una variable para identificarla en una base de datos y el "method" es la forma en la que se subirá el fomulario -->
+	Ingresa tu usuario:
+	<input type="text" name="usuario"> <!-- El "input" es donde se guardará la informacion del dato ingresado, el "type" es el tipo de accion que hará el boton y el "name" es el nombre del dato -->
+	Ingresa tu contraseña:
+	<input type="password" name="pass">
+	<br>
+	<input type="submit" value="enviar"> <!-- Aqui se nos muestra que este input no ingresará ningun tipo de dato sino que este lo registrará -->
+	<input type="reset" value="borrar"> <!-- Y en este se borrará la información -->
+</form>
+</body>
+</html>
