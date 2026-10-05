@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+    <!-- Configuración básica de cabecera -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+    <!-- Recurso externo de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-<form action="" method="post">
-<input type="hidden" name="hora" value="3:30">
-Ingresa tu nombre:
-<input type="text" name="nombre">
-<br>
-<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
-<button type="reset">Borrar <i class="fa fa-trash"></i></button>
-</form>
+    <!-- Formulario con datos internos o invisibles al usuario final -->
+    <form action="" method="post">
+        <!-- Campo oculto para enviar parámetros técnicos de fondo -->
+        <input type="hidden" name="hora" value="3:30">
+
+        <!-- Campo visible para el usuario -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+
+        <!-- Botones de acción del formulario -->
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+    </form>
 </body>
 </html>
