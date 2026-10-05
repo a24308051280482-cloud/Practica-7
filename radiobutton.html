@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+    <!-- Encabezado y configuración de la vista -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+    <!-- Estilos de iconos externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
+    <!-- Formulario de selección única mediante botones de radio -->
+    <form action="" method="post">
+        <!-- Campo de texto estándar -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
 
-<form action="" method="post">
-Ingresa tu nombre:
-<input type="text" name="nombre">
-<br>
-Selecciona el maximo de estudios que tienes:
-<br>
-<input type="radio" name="estudios" value="1">Sin estudios <br>
-<input type="radio" name="estudios" value="2">Primaria <br>
-<input type="radio" name="estudios" value="3">Secundaria <br>
-<input type="radio" name="estudios" value="4">Preparatoria <br>
-<input type="submit" value="enviar">
-<input type="reset" value="borrar">
-</form>
+        <!-- Grupo de opciones mutuamente excluyentes (mismo valor en name) -->
+        Selecciona el maximo de estudios que tienes:
+        <br>
+        <input type="radio" name="estudios" value="1">Sin estudios <br>
+        <input type="radio" name="estudios" value="2">Primaria <br>
+        <input type="radio" name="estudios" value="3">Secundaria <br>
+        <input type="radio" name="estudios" value="4">Preparatoria <br>
+
+        <!-- Botones de confirmación y limpieza -->
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
 </body>
 </html>
