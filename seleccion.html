@@ -11,14 +11,15 @@ awesome/7.3.1/css/all.min.css">
 </head>
 <body>
 
-<form action="" method="post">
+<form action="" method="post"> <!-- El bloque "form" sirve para crear el fomulario y tiene bloque de cierre -->
+   <!-- El "action" sirve como una variable para identificarla en una base de datos y el "method" es la forma en la que se subirá el fomulario -->
 Ingresa tu nombre:
-<input type="text" name="nombre">
+<input type="text" name="nombre">  <!-- El "input" es donde se guardará la informacion del dato ingresado, el "type" es el tipo de accion que hará el boton y el "name" es el nombre del dato -->
 
 <br>
 Selecciona tu pais:
-<select name="pais">
-<option value="1">Argentina</option>
+<select name="pais"> <!-- Aqui se muestra el "select" que sirve para crear una pregunta de opcion multiple donde estan las varias opciones y esta definido como "pais" -->
+<option value="1">Argentina</option> <!-- En la "option" aparecen las opciones de la seleccion, cada una con su valor definido -->
 <option value="2">España</option>
 <option value="3">Mexico</option>
 <option value="4">Guatemala</option>
