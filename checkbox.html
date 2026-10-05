@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+    <!-- Metadatos e información de la cabecera -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+    <!-- Carga de la fuente de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
+    <!-- Formulario con opciones de selección múltiple (casillas de verificación) -->
+    <form action="" method="post">
+        <!-- Campo de texto convencional -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
 
-<form action="" method="post">
-Ingresa tu nombre:
-<input type="text" name="nombre">
-
-<br>
-Selecciona los lenguajes que conozcas:
-<br>
-<input type="checkbox" name="Java">Java <br>
-<input type="checkbox" name="Python"> Python <br>
-<input type="checkbox" name="C#">C# <br>
-<input type="checkbox" name="Flutter"> Flutter <br>
-</form>
+        <!-- Listado de casillas independientes que permiten seleccionar varias opciones a la vez -->
+        Selecciona los lenguajes que conozcas:
+        <br>
+        <input type="checkbox" name="Java">Java <br>
+        <input type="checkbox" name="Python"> Python <br>
+        <input type="checkbox" name="C#">C# <br>
+        <input type="checkbox" name="Flutter"> Flutter <br>
+    </form>
 </body>
 </html>
