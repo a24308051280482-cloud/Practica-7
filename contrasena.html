@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+    <!-- Configuración básica de metadatos y codificación de caracteres -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+    <!-- Enlace a la librería externa de iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-<!-- El bloque "form" sirve para crear el fomulario y tiene bloque de cierre -->
-<form action="" method="post"> <!-- El "action" sirve como una variable para identificarla en una base de datos y el "method" es la forma en la que se subirá el fomulario -->
-	Ingresa tu usuario:
-	<input type="text" name="usuario"> <!-- El "input" es donde se guardará la informacion del dato ingresado, el "type" es el tipo de accion que hará el boton y el "name" es el nombre del dato -->
-	Ingresa tu contraseña:
-	<input type="password" name="pass">
-	<br>
-	<input type="submit" value="enviar"> <!-- Aqui se nos muestra que este input no ingresará ningun tipo de dato sino que este lo registrará -->
-	<input type="reset" value="borrar"> <!-- Y en este se borrará la información -->
-</form>
+    <!-- Contenedor principal del formulario con método de envío POST -->
+    <form action="" method="post"> 
+        <!-- Campo para la entrada de texto de usuario -->
+        Ingresa tu usuario:
+        <input type="text" name="usuario"> 
+
+        <!-- Campo para la contraseña con caracteres ocultos -->
+        Ingresa tu contraseña:
+        <input type="password" name="pass">
+        <br>
+
+        <!-- Botones de acción para enviar y reiniciar los datos -->
+        <input type="submit" value="enviar"> 
+        <input type="reset" value="borrar"> 
+    </form>
 </body>
 </html>
