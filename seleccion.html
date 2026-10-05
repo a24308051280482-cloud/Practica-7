@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
+    <!-- Encabezado con codificación y dimensiones de pantalla -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
+    <!-- Importación de iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
+    <!-- Estructura del formulario de selección -->
+    <form action="" method="post"> 
+        <!-- Entrada para texto libre -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">  
+        <br>
 
-<form action="" method="post"> <!-- El bloque "form" sirve para crear el fomulario y tiene bloque de cierre -->
-   <!-- El "action" sirve como una variable para identificarla en una base de datos y el "method" es la forma en la que se subirá el fomulario -->
-Ingresa tu nombre:
-<input type="text" name="nombre">  <!-- El "input" es donde se guardará la informacion del dato ingresado, el "type" es el tipo de accion que hará el boton y el "name" es el nombre del dato -->
+        <!-- Menú desplegable de opciones múltiples -->
+        Selecciona tu pais:
+        <select name="pais"> 
+            <option value="1">Argentina</option> 
+            <option value="2">España</option>
+            <option value="3">Mexico</option>
+            <option value="4">Guatemala</option>
+            <option value="5">Honduras</option>
+            <option value="6">El Salvador</option>
+            <option value="7">Venezuela</option>
+            <option value="8">Colombia</option>
+        </select>
+        <br>
 
-<br>
-Selecciona tu pais:
-<select name="pais"> <!-- Aqui se muestra el "select" que sirve para crear una pregunta de opcion multiple donde estan las varias opciones y esta definido como "pais" -->
-<option value="1">Argentina</option> <!-- En la "option" aparecen las opciones de la seleccion, cada una con su valor definido -->
-<option value="2">España</option>
-<option value="3">Mexico</option>
-<option value="4">Guatemala</option>
-<option value="5">Honduras</option>
-<option value="6">El Salvador</option>
-<option value="7">Venezuela</option>
-<option value="8">Colombia</option>
-</select>
-<br>
-<input type="submit" value="enviar">
-<input type="reset" value="borrar">
-</form>
+        <!-- Acciones de envío y reseteo -->
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
 </body>
 </html>
